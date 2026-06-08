@@ -1,23 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* =========================
+/* ==========================
    MOBILE RESPONSIVE
-========================= */
+========================== */
 
-@media(max-width:768px){
+@media (max-width: 768px){
 
-  .hero h1{
-    font-size:30px;
-  }
+    .container{
+        width:95%;
+        padding:10px;
+    }
 
-  .service-card{
-    width:90%;
-  }
+    .hero,
+    .about,
+    .services,
+    .features{
+        flex-direction:column;
+    }
 
-  .feature-item{
-    width:90%;
-  }
+    .hero-content,
+    .hero-image{
+        width:100%;
+        text-align:center;
+    }
 
+    .card{
+        width:100%;
+        margin-bottom:15px;
+    }
+
+    img{
+        max-width:100%;
+        height:auto;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+    h2{
+        font-size:1.5rem;
+    }
+
+    p{
+        font-size:0.95rem;
+    }
 }
 
 /* =========================
