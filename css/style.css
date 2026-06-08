@@ -139,28 +139,26 @@ body{
 }
 
 .hero{
-  min-height:305px;
-
-  background-image:
-  linear-gradient(
-    rgba(255,255,255,0.75),
-    rgba(255,255,255,0.75)
-  ),
-  url("../images/dashboard-preview.png");
-
-  background-size:100%;
-  background-repeat:no-repeat;
-  background-position:center 25px;
-
   display:flex;
-  justify-content:center;
+  flex-direction:column;
   align-items:center;
-
+  justify-content:center;
   text-align:center;
+
+  padding:40px 20px;
+}
+
+.hero-image{
+  width:100%;
+  max-width:900px;
+  border-radius:20px;
+  margin-bottom:30px;
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
 .hero-overlay{
-  max-width:500px;
+  max-width:700px;
 }
 
 .hero h1{
@@ -625,4 +623,22 @@ footer p{
       margin-top:30px;
       padding:25px 15px;
   }
+}
+
+@media(max-width:768px){
+
+  .hero{
+      padding:20px 15px;
+  }
+
+  .hero-image{
+      width:100%;
+      max-width:100%;
+      margin-bottom:20px;
+  }
+
+  .hero h1{
+      font-size:2rem;
+  }
+
 }
