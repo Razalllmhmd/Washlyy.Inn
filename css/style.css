@@ -337,12 +337,16 @@ body{
   width:90%;
   max-width:380px;
 
-  padding:30px;
-  border-radius:16px;
+  padding:35px;
 
   background:white;
 
-  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+  border-radius:25px;
+
+  box-sizing:border-box;
+
+  box-shadow:
+  0 20px 40px rgba(0,0,0,0.12);
 }
 
 h2{
@@ -639,6 +643,17 @@ footer p{
 
   .hero h1{
       font-size:2rem;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .premium-card{
+      left:50%;
+      top:45%;
+      width:90%;
+      max-width:350px;
   }
 
 }
