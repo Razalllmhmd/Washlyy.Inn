@@ -4,25 +4,12 @@
    MOBILE RESPONSIVE
 ========================== */
 
-@media (max-width: 768px){
-
-   .book-card{
-        width:95%;
-        padding:15px;
-    }
-
-    input,
-    select,
-    textarea,
-    button{
-        width:100%;
-        font-size:16px;
-    }
-}
+@media (max-width:768px){
 
     .container{
         width:95%;
         padding:10px;
+        box-sizing:border-box;
     }
 
     .hero,
@@ -58,6 +45,15 @@
 
     p{
         font-size:0.95rem;
+    }
+
+    input,
+    select,
+    textarea,
+    button{
+        width:100%;
+        font-size:16px;
+        box-sizing:border-box;
     }
 }
 
@@ -131,6 +127,16 @@ body{
 /* =========================
    HERO SECTION
 ========================= */
+@media(max-width:768px){
+
+  .hero{
+      height:auto;
+      padding:60px 20px;
+      background-size:cover;
+      background-position:center;
+  }
+
+}
 
 .hero{
   height:305px;
@@ -169,6 +175,14 @@ body{
 /* =========================
    SERVICES
 ========================= */
+@media(max-width:768px){
+
+  .services{
+      margin:20px;
+      padding:20px;
+  }
+
+}
 
 .services{
   text-align:center;
@@ -194,6 +208,24 @@ body{
 
 .service-card:hover{
   transform:translateY(-5px);
+}
+
+@media(max-width:768px){
+
+  .gallery{
+      padding:40px 20px;
+  }
+
+  .content h3{
+      font-size:24px;
+      text-align:center;
+  }
+
+  .content p{
+      font-size:16px;
+      text-align:center;
+  }
+
 }
 
 .gallery{
@@ -274,7 +306,6 @@ body{
   justify-content:center;
   gap:20px;
   flex-wrap:wrap;
-  font-size: 100px;
 }
 
 .feature-item{
